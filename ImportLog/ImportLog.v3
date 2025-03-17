@@ -1,0 +1,7 @@
+import component console {
+    def log(x: int) -> void;
+}
+
+export def logIt() -> void {
+    return console.log(13);
+}
