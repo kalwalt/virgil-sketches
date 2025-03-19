@@ -1,0 +1,7 @@
+import component calcPrimes {
+    def FindPrimes(start: int, end: int) -> void;
+}
+
+def main() {
+    calcPrimes.FindPrimes(1, 100);
+}
