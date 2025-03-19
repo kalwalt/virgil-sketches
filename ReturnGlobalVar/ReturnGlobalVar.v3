@@ -1,0 +1,16 @@
+var global_var = 255;
+
+import component env {
+    def add(x: int, y: int) -> int;
+    def log(x: int) -> void;
+}
+
+def main() {
+    var res = env.add(1, 43);
+    env.log(res);
+    
+}
+
+export def returnGlobalVar() -> int {
+    return global_var;
+}
