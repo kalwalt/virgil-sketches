@@ -1,0 +1,25 @@
+import component console {
+    def log(x: int) -> void;
+}
+
+import component PrimeChecker {
+    def isPrime(value: int) -> bool;
+}
+
+
+def FindPrimes(start: int, end: int) -> void {
+     //console.log("Prime numbers between %d and %d:\n", start, end);
+
+  // Loop through the odd numbers to see which ones are prime numbers
+  for (i: int = start; i <= end; i += 2)
+  {
+    // If the current number is a prime number then pass the value to the console
+    // of the browser
+    if (PrimeChecker.isPrime(i))
+    {
+      console.log(i);
+    }
+  }
+}
+
+export FindPrimes;
