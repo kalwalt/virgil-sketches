@@ -22,9 +22,27 @@ def FindPrimes(start: int, end: int) -> void {
   }
 }
 
+def FindPrimes2(start: int, end: int) -> int {
+     //console.log("Prime numbers between %d and %d:\n", start, end);
+  var res: int;
+  // Loop through the odd numbers to see which ones are prime numbers
+  for (i: int = start; i <= end; i += 2)
+  {
+    // If the current number is a prime number then pass the value to the console
+    // of the browser
+    if (PrimeChecker.isPrime(i))
+    {
+      res = i;
+    }
+  }
+  return res;
+}
+
+
 // FindPrimes works only iniside main() ???
 def main() {
    FindPrimes(1, 100);
 }
 
 export FindPrimes;
+export FindPrimes2;
