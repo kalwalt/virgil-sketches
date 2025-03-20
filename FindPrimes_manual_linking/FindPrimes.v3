@@ -22,4 +22,9 @@ def FindPrimes(start: int, end: int) -> void {
   }
 }
 
+// FindPrimes works only iniside main() ???
+def main() {
+   FindPrimes(1, 100);
+}
+
 export FindPrimes;
