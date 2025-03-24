@@ -1,0 +1,6 @@
+import component console {
+  def logi(i: int) -> void;
+  def logf(f: float) -> void;
+}
+
+def main() {}
