@@ -3,4 +3,7 @@ import component console {
   def logf(f: float) -> void;
 }
 
-def main() {}
+def main() {
+  console.logi(2);
+  console.logf(45.04286);
+}
