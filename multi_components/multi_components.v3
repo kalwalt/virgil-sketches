@@ -5,5 +5,5 @@ import component console {
 
 def main() {
   console.logi(2);
-  console.logf(45.04286);
+  console.logf(0.2076f);
 }
